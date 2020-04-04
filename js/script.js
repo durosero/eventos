@@ -13,25 +13,26 @@ window.onload = function() {
     }
 
     btnVerde.onmouseover = function() {
-        caja.style.background = "green"
+        caja.style.background = "green";
     }
     btnAzul.onmousemove = function() {
         console.log("Boton Azul");
-        caja.style.background = "blue"
+        caja.style.background = "blue";
     }
     btnAmarillo.ondblclick = function() {
-        caja.style.background = "yellow"
+        caja.style.background = "yellow";
     }
-
+    caja.onmousemove = quitarColor;
 
 
     //quitr colores 
-    btnRojo.onmouseout = quitarColor;
-    btnVerde.onmouseout = quitarColor;
-    btnAzul.onmouseout = quitarColor;
-    btnAmarillo.onmouseout = quitarColor;
+    // btnRojo.onmouseout = quitarColor;
+    // btnVerde.onmouseout = quitarColor;
+    // btnAzul.onmouseout = quitarColor;
+    // btnAmarillo.onmouseout = quitarColor;
 
     function quitarColor() {
+        console.log("Quitando color..");
         caja.style.background = null;
     }
 
