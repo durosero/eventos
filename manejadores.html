@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejadores de enventos</title>
+</head>
+
+<body>
+    <h1 onclick=" console.log('hiciste click'); var nombre='duvan'; console.log(nombre);">Manejadores como atributos de los elementos HTML.</h1>
+
+    <h1 onclick="mostrarTexto();">Manejadores como funciones JavaScript externas.</h1>
+
+    <h1 id="mensaje">Manejadores "semánticos".</h1>
+</body>
+
+<script type="text/javascript">
+    // var mensaje = document.getElementById('mensaje');
+    // mensaje.onclick = mostrarMensaje;
+
+    function mostrarTexto() {
+        console.log();
+        console.log("Hola mundo semantico");
+
+    }
+
+    var mensaje = document.getElementById('mensaje');
+    mensaje.onclick = () => mostrarMensaje(1, 5);
+
+    function mostrarMensaje(a, b) {
+        console.log("Valores : " + a + " - " + b);
+        console.log("La suma de los valores es: " + (a + b));
+
+
+    }
+
+
+    console.log('Página cargada');
+</script>
+
+</html>

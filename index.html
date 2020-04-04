@@ -4,39 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manejadores de enventos</title>
+    <title>Eventos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1 onclick=" console.log('hiciste click'); var nombre='duvan'; console.log(nombre);">Manejadores como atributos de los elementos HTML.</h1>
+    <br> <br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-danger">Rojo</button>
+                <button class="btn btn-success">Verde</button>
+                <button class="btn btn-info">Azul</button>
+                <button class="btn btn-warning  ">Amarillo</button>
+            </div>
+        </div>
+        <br>
 
-    <h1 onclick="mostrarTexto();">Manejadores como funciones JavaScript externas.</h1>
 
-    <h1 id="mensaje">Manejadores "semánticos".</h1>
+        <div class="row">
+
+            <div class="card card-body" id="caja">
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
 </body>
-
-<script type="text/javascript">
-    // var mensaje = document.getElementById('mensaje');
-    // mensaje.onclick = mostrarMensaje;
-
-    function mostrarTexto() {
-        console.log();
-        console.log("Hola mundo semantico");
-
-    }
-
-    var mensaje = document.getElementById('mensaje');
-    mensaje.onclick = () => mostrarMensaje(1, 5);
-
-    function mostrarMensaje(a, b) {
-        console.log("Valores : " + a + " - " + b);
-        console.log("La suma de los valores es: " + (a + b));
-
-
-    }
-
-
-    console.log('Página cargada');
-</script>
 
 </html>
